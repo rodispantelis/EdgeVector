@@ -1,0 +1,80 @@
+<html><head><meta charset="UTF-8">
+<style>
+#coda,#codb, #decod {
+width: 220px;
+}
+#form31{
+	border: 2px solid blue;
+	font-style: italic;
+	color:blue;
+	border-radius: 5px;
+	background-color: white;
+}
+#input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+}
+</style>
+<title>Edge Vector</title>
+</head>
+<body>
+<H1><i>Edge Vector</i> <small>graph representation</small></H1>
+<form id="forma" action="#" onsubmit="return false;">
+    <input type="text" id="coda" placeholder="Enter node #1">
+</form>
+<form id="formb" action="#" onsubmit="return false;">
+    <input type="text" id="codb" placeholder="Enter node #2">
+</form>
+<button style="background-color:lightblue;border-radius: 4px; " onclick="coder()">code
+</button>
+<p id="resultcod">&nbsp;</p>
+<form id="form2" action="#" onsubmit="return false;">
+    <input type="text" id="decod" placeholder="Enter place in the Edge Vector">
+</form>
+<button style="background-color:lightblue;border-radius: 4px;" 
+		onclick="decoder()">decode</button>
+<p id="resultdecod">&nbsp;</p>
+<br><br>
+<a target="_blank" href="codec.js">JavaScript library</a>
+<br>
+<a target="_blank" href="Codec.java">Java library</a>
+<!--
+<h3>Edge list files (DIMACS) in <i>Edge Vector</i></H3>
+<table><tr>
+<td  id="form31" style="height:70px;width: 220px;margin: 0; padding: 0">	
+    <p style="margin: 0; padding: 0">&nbsp;&nbsp;&nbsp;&nbsp;drop your files here&nbsp;...&nbsp;</p>
+</td>
+</tr></table>
+<br>
+<label for="input" style="background-color:lightblue;border-radius: 4px;box-shadow: 1px 1px #888888;">&nbsp;&nbsp;or&nbsp;browse&nbsp;&nbsp;</label>
+<input type="file" id="input" name="kmlfile" onchange="selectedfiles(this.files)">
+<br>
+-->
+<script src="codec.js" defer="defer" type="text/javascript"></script>
+<script>
+    		var dropbox;
+		dropbox=document.getElementById('form31');
+		dropbox.addEventListener("dragenter", dragenter, false);
+		dropbox.addEventListener("dragover", dragover, false);
+		dropbox.addEventListener("drop", drop, false);
+		function dragenter(e) {e.stopPropagation();e.preventDefault();}
+		function dragover(e) {e.stopPropagation();e.preventDefault();}
+		function drop(e) {e.stopPropagation();e.preventDefault();var dt = e.dataTransfer;
+		var files = dt.files;
+                read(files);
+
+                //window.parent.addkml(files,cl,kp);
+            }
+		
+		function selectedfiles(files){
+		read(files);
+            }
+            
+            function read(files){
+                       
+            }	
+		
+</script>
+</body>
+</html>
