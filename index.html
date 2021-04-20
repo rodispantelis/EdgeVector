@@ -14,45 +14,55 @@ width: 220px;
 </head>
 <body>
 <H1><i>Edge Vector</i> <small>graph representation</small></H1>
-<form id="forma" action="#" onsubmit="return false;">
-    <input type="text" id="coda" placeholder="Enter node #1">
-</form>
-<form id="formb" action="#" onsubmit="return false;">
-    <input type="text" id="codb" placeholder="Enter node #2">
-</form>
-<button style="background-color:lightblue;border-radius: 4px; " onclick="coder1()">code
-</button>
-<p id="resultcod">&nbsp;</p>
-<form id="form2" action="#" onsubmit="return false;">
-    <input type="text" id="decod" placeholder="Enter place in the Edge Vector">
-</form>
-<button style="background-color:lightblue;border-radius: 4px;" 
+<table>
+    <tr>
+        <td style="border: 1px solid black; vertical-align: top;">
+            <h3>Encoder / decoder of graph elements</H3>
+            <form id="forma" action="#" onsubmit="return false;">
+                <input type="text" id="coda" placeholder="Enter node #1">
+            </form>
+            <form id="formb" action="#" onsubmit="return false;">
+                <input type="text" id="codb" placeholder="Enter node #2">
+            </form>
+            <button style="background-color:lightblue;border-radius: 4px; " onclick="coder1()">code
+            </button>
+            <p id="resultcod">&nbsp;</p>
+            <form id="form2" action="#" onsubmit="return false;">
+                <input type="text" id="decod" placeholder="Enter place in the Edge Vector">
+            </form>
+            <button style="background-color:lightblue;border-radius: 4px;" 
 		onclick="decoder1()">decode</button>
-<p id="resultdecod">&nbsp;</p>
+            <p id="resultdecod">&nbsp;</p>
+            <br>
+        </td>
+        <td style="border: 1px solid black; vertical-align: top;">
+            <h3>Edge list files (DIMACS) to <i>Edge Vector</i></H3>
+            <br>
+            <a>Browse for DIMACS file&nbsp;&nbsp;</a>
+            <input type="file" id="inputfile" name="file">
+            <br><br>
+
+            <table>
+                <tr>
+                    <td>
+                        <button style="background-color:lightblue;border-radius: 5px;" onclick="dim2ev()">Convert to Edge Vector&nbsp;&nbsp;</button>
+                    </td>
+                <td>
+                        <a download="graph.ev" id="thelink" onclick="txt()">click to get the file</a>
+                </td>
+                </tr>
+            </table>
+
+            <p id="dec">&nbsp;</p>
+
+        </td>
+    </tr>
+</table>
 
 <a target="_blank" href="codec.js">JavaScript library</a>
 <br>
 <a target="_blank" href="Codec.java">Java library</a>
 <br><br>
-
-<h3>Edge list files (DIMACS) to <i>Edge Vector</i></H3>
-<br>
-<a>Browse for DIMACS file&nbsp;&nbsp;</a>
-<input type="file" id="inputfile" name="file">
-<br><br>
-
-<table>
-    <tr>
-        <td>
-<button style="background-color:lightblue;border-radius: 5px;" onclick="dim2ev()">Convert to Edge Vector&nbsp;&nbsp;</button>
-        </td>
-        <td>
-<a download="graph.ev" id="thelink" onclick="txt()">click to get the file</a>
-        </td>
-</tr>
-</table>
-
-<p id="dec">&nbsp;</p>
 
 <script src="codec.js" defer="defer"></script>
 <script src="dimacs2ev.js" defer="defer"></script>

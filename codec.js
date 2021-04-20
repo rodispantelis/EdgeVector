@@ -108,7 +108,7 @@ if(x<0){
 	y--;
 	x=q-(((y*y)-y)/2);
 }		
-document.getElementById("resultdecod").innerHTML='symbol '+q+' denotes edge'+'('+x+', '+y+')';
+document.getElementById("resultdecod").innerHTML='symbol '+q+' denotes edge '+'('+x+', '+y+')';
 document.getElementById("decod").value=null;
 x=0;
 y=0;
