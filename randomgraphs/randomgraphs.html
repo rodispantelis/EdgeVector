@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"" />
+<meta charset="UTF-8">
+<style>
+body {background-color: rgb(200, 200, 200);margin: 0; padding: 0;}
+w {color: blue;text-decoration: underline;cursor: pointer;}
+w4 {color: blue;font-style: italic;}
+w1 {color: black;text-decoration: underline;cursor: pointer;}
+w2 {color: red;text-decoration: underline;cursor: pointer;}
+w3 {color: green;text-decoration: underline;cursor: pointer;}
+w5 {color: blue;font-style: italic;text-decoration: underline;cursor: pointer;}
+#ad{
+    position: absolute;
+	right:0%;
+	bottom:0%;
+	z-index: 1000;
+	margin: 0; 
+	padding: 0
+}
+
+table, tr {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+</style>
+<title>Generate Random Graphs</title>
+</head>
+<body>
+    <H1><i>Generate Random Graphs</i></H1>
+    <br>
+<table>
+<tr>
+<td><w4>Choose Graph Type</w4>
+</td>
+<td>
+<select style="background-color:white;border-radius: 5px;" id="prj2" onchange="p()">
+  <option value="undir">Undirected Random Graphs</option>
+  <option value="dir">Directed Random Graphs</option>
+  <option value="tree">Random Trees</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<a id='degm'><w4>Input Maximum / Minimum Node Degree</w4><br>
+(<i>The maximum and minimum number of nodes that any node may be adjacent to;<br>valid inputs are integers larger than zero</i>)<a>
+</td>
+<td>
+<form id="form1" action="#" onsubmit="return false;" style="margin: 0; padding: 0;">
+<input type="number" step="any" placeholder="maximum degree" style="border-radius: 5px;width:200px;" id="maxdeg" onchange="p1()"></form>
+<form id="form1" action="#" onsubmit="return false;" style="margin: 0; padding: 0;">
+<input type="number" step="any" placeholder="minimum degree" style="border-radius: 5px;width:200px;" id="mindeg" onchange="p1()"></form>
+</td>
+</tr>
+<tr>
+<td><w4>Enter the Number of Nodes in the graph</w4></td>
+<td>
+	<form id="form1" action="#" onsubmit="return false;" style="margin: 0; padding: 0;">
+	<input type="number" step="any" style="border-radius: 5px;width:200px;" id= "nodes" onchange="p1()"></form></td>
+</tr>
+<tr>	
+<td><w4>Graph Density</w4><br>(<i>Input the probability of any two nodes being adjacent; <br>valid inputs are decimal numbers between 0 and 1</i>)</td>
+<td>
+<form id="form2" action="#" onsubmit="return false;" style="margin: 0; padding: 0;">
+<input type="number" step="any" value="0.5" id="dens" style="border-radius: 5px;width:200px;" onchange="p1()"></form>
+</td>
+</tr>
+</table>	
+<br>
+<table style="margin: 0; padding: 0;">
+<tr>
+<td>
+<button style="background-color:lightblue;border-radius: 5px;align:right;margin: 0; padding: 0;height: 25px;"  onclick="gen()">&nbsp;Generate Graph&nbsp;</button>
+</td>
+</tr>
+<tr>
+<td>
+<a download="RandomGraph.txt" id="thelinkdm" style="display:none;margin: 0; padding: 0;height: 25px;"> Download DIMACS file</a>
+</td>
+</tr>
+<tr>
+<td>
+<a download="RandomGraphEV.txt" id="thelink" style="display:none;margin: 0; padding: 0;height: 25px;"> Download Edge Vector file</a>
+</td>
+</tr>
+</table>
+
+<br><br>
+<a target="_blank" href="index.html"><i>Edge Vector graph representation</i></a>
+
+<script src="../libraries/codec.js" defer="defer"></script>
+<script src="randomgraphs.js" defer="defer"></script>
+</body></html>

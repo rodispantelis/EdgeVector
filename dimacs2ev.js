@@ -2,7 +2,8 @@ var temp=Array(0);
 var nodes=0;
 var ev;
 var dimac;
-        
+
+if (document.getElementById('inputfile') !=null) {
 document.getElementById('inputfile')
         .addEventListener('change', 
            function() {
@@ -12,6 +13,7 @@ document.getElementById('inputfile')
                 };   
                 fr.readAsText(this.files[0]);
             });
+    }
             
 function dim2ev(){
     for(i1=0;i1<dimac.length;i1++){
@@ -47,12 +49,4 @@ function txt() {
 var link = document.getElementById('thelink');
 document.getElementById('thelink').download='graph.ev';
 link.href = makeTextFile(ev);
-}
-
-function dec(){
-    var d=0;
-    for(g=ev.length;g>0;g--){
-        d+=(Math.pow(2, (g-1)))*ev[g-1];
-    }
-    document.getElementById("dec").innerHTML='Decimal encoding: '+d;
 }
