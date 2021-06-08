@@ -158,7 +158,6 @@ for(var i=1;i<n;i++){
 var ad=Number(cv)/Number(cn);
 textbox=crd+'c '+cn+' nodes,'+cv+' edges,'+ad+' average degree\n'+'p \n'+textbox;
 txtdmac();
-//txt();
 }
 function p1(){
 document.getElementById('thelinkdm').style.display = 'none';
@@ -242,29 +241,7 @@ var link = document.getElementById('thelink');
 document.getElementById('thelink').download='graph.ev';
 link.href = makeTextFile(ev);
 }
-/*
-function txtev() {
-document.getElementById('thelink').style.display = 'block';
-var textFile = null,
-  makeTextFile = function (text) {
-    var data = new Blob([text], {type: 'text/plain'});
-    if (textFile !== null) {
-      window.URL.revokeObjectURL(textFile);
-    }
-    textFile = window.URL.createObjectURL(data);
-    return textFile;
-  };
-    var link = document.getElementById('thelink');
-	if(tp=='dir'){
-            document.getElementById('thelink').download='RandomGraphEV.Directed';
-	}else if(tp=='undir'){
-            document.getElementById('thelink').download='RandomGraphEV.Undirected';
-	}else if(tp=='tree'){
-            document.getElementById('thelink').download='RandomGraphEV.Tree';
-	}
-    link.href = makeTextFile(textboxev);
-}
-*/
+
 document.getElementById('mindeg').style.display = 'none';
 document.getElementById('maxdeg').style.display = 'none';
 document.getElementById('degm').style.display = 'none';
