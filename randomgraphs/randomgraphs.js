@@ -23,7 +23,9 @@ function gen(){
     nodes=0;
     ev=[];
     dimac=['c'];
-
+    
+    tp=prj2.value;
+    
     if(tp=='tree'){
         gent();}
     else {
@@ -165,7 +167,7 @@ document.getElementById('thelink').style.display = 'none';
 }
 function p(){
 p1();
-tp=prj2.value;
+
 if(tp=='tree'){
     document.getElementById('mindeg').style.display = 'block';
     document.getElementById('maxdeg').style.display = 'block';
@@ -240,6 +242,10 @@ function txt() {
 var link = document.getElementById('thelink');
 document.getElementById('thelink').download='graph.ev';
 link.href = makeTextFile(ev);
+
+if(tp=='dir'){
+    document.getElementById('thelink').style.display = 'none';
+}
 }
 
 document.getElementById('mindeg').style.display = 'none';
