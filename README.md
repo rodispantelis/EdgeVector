@@ -3,9 +3,7 @@ Edge Vector representation is a novel method of representing graphs. It was intr
 
 More details [here.](https://rodispantelis.github.io/EdgeVector/)
 
-In the libraries folder there are coders / decoders implemented in Java and Javascript. A
-
-Also a Javascript library for converting files from Dimacs format to Edge Vector that is used as a benchmark.
+In the libraries folder there are coders / decoders implemented in Java and Javascript. Also a Javascript library for converting files from Dimacs format to Edge Vector that is used as a benchmark.
 
 In the DIMACS folder there graphs from the [Second DIMACS Implementation Challenge](http://archive.dimacs.rutgers.edu/Challenges/), they are provided
 
