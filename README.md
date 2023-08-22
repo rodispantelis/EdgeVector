@@ -5,9 +5,9 @@ More details [here.](https://rodispantelis.github.io/EdgeVector/)
 
 In the libraries folder there are coders / decoders implemented in Java and Javascript. Also a Javascript library for converting files from Dimacs format to Edge Vector that is used as a benchmark.
 
-In the randographs folder there is a web application for generating randomgraphs
+In the randographs folder there is a web application for generating randomgraphs.
 
-In the DIMACS folder there graphs from the [Second DIMACS Implementation Challenge](http://archive.dimacs.rutgers.edu/Challenges/), they are provided
+In the DIMACS folder there graphs from the [Second DIMACS Implementation Challenge](http://archive.dimacs.rutgers.edu/Challenges/), they may be used as benchmark.
 
 ---
 
