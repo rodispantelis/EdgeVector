@@ -12,9 +12,10 @@ In the DIMACS folder there graphs from the [Second DIMACS Implementation Challen
 #Edge vector for directed graphs
 Let $s$ be a vector that represents directed graph $G(V, E)$. 
 The symbol in position $q$ of $s$ is $w$, if nodes $a$ and $b$ are adjacent and 0 if they are not adjacent, where $a < b$ and
-\[
+
+$$
 q=a+\sum_{x=0}^{b-1}x
-\]
+$$
 
 On non-weighted graphs, $w=1$ for $a \to b$, $w=2$ for $b \gets a$ and $w=3$ for $a \leftrightarrow b$.
 For weighted graphs we form additional vector $s_w$ so that in position $p$ of $s_w$ we assign the weight of the edge denoted in position $p$ of $s$.
