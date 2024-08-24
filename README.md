@@ -1,4 +1,5 @@
 # EdgeVector
+
 Edge Vector representation is a novel method of representing graphs. It was introduced in [1]. The advantage of this representation is the minimum requirement in memory usage, in comparison to competition. Also encoding a graph in Edge Vector or decoding the graph elements from the representation is efficient with polynomial complexity.
 
 More details [here.](https://rodispantelis.github.io/EdgeVector/)
@@ -9,7 +10,15 @@ In the randographs folder there is a web application for generating randomgraphs
 
 In the DIMACS folder there graphs from the [Second DIMACS Implementation Challenge](http://archive.dimacs.rutgers.edu/Challenges/), they may be used as benchmark.
 
+#Edge vector for undirected graphs
+
+Let $s$ be a vector that represents undirected graph $G(V, E)$, consisting of $v$ nodes. We further enumerate the elements of $s$ in the range 
+$[0, e)$, where $e = v(v-1) / 2$ is the maximum possible number of edges in $G$.
+The symbol in position $q$ of $s$ is $w$, if nodes $a$ and $b$ are adjacent and 0 if they are not adjacent, where  $q=\textit{a}+\sum_{x=0}^{b-1}x$, for $a < b$ and 
+$a, b \in [0, v)$. The value of $w$ is set to 1 for non-weighted graphs, whereas for weighted graphs the respective value corresponds to the weight of the edge $(a, b)$.
+
 #Edge vector for directed graphs
+
 Let $s$ be a vector that represents directed graph $G(V, E)$. 
 The symbol in position $q$ of $s$ is $w$, if nodes $a$ and $b$ are adjacent and 0 if they are not adjacent, where $a < b$ and
 
@@ -21,7 +30,8 @@ On non-weighted graphs, $w=1$ for $a \to b$, $w=2$ for $b \gets a$ and $w=3$ for
 For weighted graphs we form additional vector $s_w$ so that in position $p$ of $s_w$ we assign the weight of the edge denoted in position $p$ of $s$.
 In the special case of bidirectinal edge $(a, b)$ in which different weights apply in each direction, $s_w$ is formatted as $w_1 | w_2$ where $w_1$ is the weight for $(a, b)$ and $w_2$ the weight for $(b, a)$.
 
-#Edge Vector Index# 
+#Edge Vector Index
+
 Let $i$ be the array (or the tuple) that indexes the Edge Vector representation of graph $G$. 
 For any edge $e(a,b) \in E$ we place in $i$ value $q$ as defined in \eqref{q}. On this way, the index that is produced does not contain redundant information about nonadjacent nodes. The order in which we index the edges in $i$ is not restrictive, we can use any indexing order that is appropriate for the problem under study.
 
