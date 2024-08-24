@@ -26,9 +26,7 @@ Let $i$ be the array (or the tuple) that indexes the Edge Vector representation 
 For any edge $e(a,b) \in E$ we place in $i$ value $q$ as defined in \eqref{q}. On this way, the index that is produced does not contain redundant information about nonadjacent nodes. The order in which we index the edges in $i$ is not restrictive, we can use any indexing order that is appropriate for the problem under study.
 
 An example of a small NN representation in Edge Vector Index is illustrated in figure.1.
-![figure.1](smallNN.png)
-
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=0.99\linewidth]{smallNN.png}{ \textbf{A small NN with random integer edge weights in Edge Vector and Edge Vector Index representations.}\label{fig:smallnn}}
+![figure.1](smallgraph.png)
 
 Directed edges are represented by array $i_{dir}$ so that in position $p$ of $i_{dir}$ we assign value 1, 2 or 3 as defined above that denotes the direction of the edge indexed in position $p$ of index $i$. Edge weights are denoted in array $i_w$ so that in position $p$ of $i_w$ we assign the weight of the edge denoted in position $p$ of $i$.
 
