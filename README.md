@@ -20,7 +20,7 @@ The symbol in position $q$ of $s$ is $w$, if nodes $a$ and $b$ are adjacent and 
 The value of $w$ is set to 1 for non-weighted graphs, whereas for weighted graphs the respective value corresponds to the weight of the edge $(a, b)$.
 
 ### Edge vector for directed graphs
-For directed graph $G$ the Edge Vector reprentation is the same as above with the following conventions on value $w$.
+For directed graph $G$ the Edge Vector representation only differs on value $w$.
 On non-weighted graphs, $w=1$ for $a \to b$, $w=2$ for $b \gets a$ and $w=3$ for $a \leftrightarrow b$.
 For weighted graphs we form additional vector $s_w$ so that in position $p$ of $s_w$ we assign the weight of the edge denoted in position $p$ of $s$.
 In the special case of bidirectinal edge $(a, b)$ in which different weights apply in each direction, $s_w$ is formatted as $w_1 | w_2$ where $w_1$ is the weight for $(a, b)$ and $w_2$ the weight for $(b, a)$.
