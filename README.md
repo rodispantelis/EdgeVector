@@ -4,11 +4,11 @@ Edge Vector representation is a novel method of representing graphs. It was intr
 
 Use Edge Vector [here.](https://rodispantelis.github.io/EdgeVector/)
 
-In the libraries folder there are coders / decoders implemented in Java and Javascript. Also included a Javascript library for converting files from Dimacs format to Edge Vector that is used as a benchmark.
+In the libraries folder there are coders / decoders implemented in Java and Javascript. Also included a Javascript library for converting files from Dimacs format to Edge Vector which is used as a benchmark.
 
 In the randographs folder there is a web application for generating randomgraphs.
 
-In the DIMACS folder there graphs from the [Second DIMACS Implementation Challenge](http://archive.dimacs.rutgers.edu/Challenges/), they may be used as benchmark.
+In the DIMACS folder there are graphs from the [Second DIMACS Implementation Challenge](http://archive.dimacs.rutgers.edu/Challenges/), they may be used as benchmark.
 
 ### Edge vector for undirected graphs
 Let $s$ be a vector that represents undirected graph $G(V, E)$, consisting of $v$ nodes. We further enumerate the elements of $s$ in the range 
@@ -20,7 +20,7 @@ The symbol in position $q$ of $s$ is $w$, if nodes $a$ and $b$ are adjacent and 
 The value of $w$ is set to 1 for non-weighted graphs, whereas for weighted graphs the respective value corresponds to the weight of the edge $(a, b)$.
 
 ### Edge vector for directed graphs
-Edge direction is denoted by $w$ as defined above with the following conventions.
+For directed graph $G$ the Edge Vector reprntation is the same as above with the following conventions on value $w$.
 On non-weighted graphs, $w=1$ for $a \to b$, $w=2$ for $b \gets a$ and $w=3$ for $a \leftrightarrow b$.
 For weighted graphs we form additional vector $s_w$ so that in position $p$ of $s_w$ we assign the weight of the edge denoted in position $p$ of $s$.
 In the special case of bidirectinal edge $(a, b)$ in which different weights apply in each direction, $s_w$ is formatted as $w_1 | w_2$ where $w_1$ is the weight for $(a, b)$ and $w_2$ the weight for $(b, a)$.
