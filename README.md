@@ -1,4 +1,4 @@
-# EdgeVector
+# Edge Vector representation
 
 Edge Vector representation is a novel method of representing graphs. It was introduced in [1]. The advantage of this representation is the minimum requirement in memory usage, in comparison to competition. Also encoding a graph in Edge Vector or decoding the graph elements from the representation is efficient with polynomial complexity.
 
@@ -10,7 +10,7 @@ In the randographs folder there is a web application for generating randomgraphs
 
 In the DIMACS folder there are graphs from the [Second DIMACS Implementation Challenge](http://archive.dimacs.rutgers.edu/Challenges/), they may be used as benchmark.
 
-### Edge vector for undirected graphs
+### Edge Vector for undirected graphs
 Let $s$ be a vector that represents undirected graph $G(V, E)$, consisting of $v$ nodes. We further enumerate the elements of $s$ in the range 
 $[0, e)$, where $e = v(v-1) / 2$ is the maximum possible number of edges in $G$.
 The symbol in position $q$ of $s$ is $w$, if nodes $a$ and $b$ are adjacent and 0 if they are not adjacent, where  
