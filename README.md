@@ -13,8 +13,13 @@ In the DIMACS folder there graphs from the [Second DIMACS Implementation Challen
 ### Edge vector for undirected graphs
 Let $s$ be a vector that represents undirected graph $G(V, E)$, consisting of $v$ nodes. We further enumerate the elements of $s$ in the range 
 $[0, e)$, where $e = v(v-1) / 2$ is the maximum possible number of edges in $G$.
-The symbol in position $q$ of $s$ is $w$, if nodes $a$ and $b$ are adjacent and 0 if they are not adjacent, where  $$q=\textit{a}+\sum_{x=0}^{b-1}x$$, for $a < b$ and 
-$a, b \in [0, v)$. The value of $w$ is set to 1 for non-weighted graphs, whereas for weighted graphs the respective value corresponds to the weight of the edge $(a, b)$.
+The symbol in position $q$ of $s$ is $w$, if nodes $a$ and $b$ are adjacent and 0 if they are not adjacent, where  
+
+$$q=a+\sum_{x=0}^{b-1}x$$ (1)
+
+, for $a < b$ and $a, b \in [0, v)$. 
+
+The value of $w$ is set to 1 for non-weighted graphs, whereas for weighted graphs the respective value corresponds to the weight of the edge $(a, b)$.
 
 ### Edge vector for directed graphs
 Edge direction is denoted by $w$ as defined above with the following conventions.
