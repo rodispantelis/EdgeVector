@@ -15,7 +15,7 @@ Let $s$ be a vector that represents undirected graph $G(V, E)$, consisting of $v
 $[0, e)$, where $e = v(v-1) / 2$ is the maximum possible number of edges in $G$.
 The symbol in position $q$ of $s$ is $w$, if nodes $a$ and $b$ are adjacent and 0 if they are not adjacent, where  
 
-$$q=a+\sum_{x=0}^{b-1}x$$ (eq. 1), for $a < b$ and $a, b \in [0, v)$. 
+(eq. 1) $$q=a+\sum_{x=0}^{b-1}x$$ , for $a < b$ and $a, b \in [0, v)$. 
 
 The value of $w$ is set to 1 for non-weighted graphs, whereas for weighted graphs the respective value corresponds to the weight of the edge $(a, b)$.
 
@@ -27,7 +27,7 @@ In the special case of bidirectinal edge $(a, b)$ in which different weights app
 
 ### Edge Vector Index
 Let $i$ be the array (or the tuple) that indexes the Edge Vector representation of graph $G$. 
-For any edge $e(a,b) \in E$ we place in $i$ value $q$ as defined in eq. 1. On this way, the index that is produced does not contain redundant information about nonadjacent nodes. The order in which we index the edges in $G$ is not restrictive, we can use any indexing order that is appropriate for the problem under study.
+For any edge $e(a,b) \in E$ we place in $i$ value $q$ as defined in eq. 1. On this way, the index that is produced does not contain redundant information about nonadjacent nodes. The order in which we index the edges in $i$ is not restrictive, we can use any indexing order that is appropriate for the problem under study.
 
 An example of a small NN representation in Edge Vector Index is illustrated in next figure.
 ![figure.1](smallgraph.png)
