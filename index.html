@@ -25,7 +25,7 @@ border-radius: 5px;
 <table>
     <tr>
         <td style="border: 1px solid black; border-radius: 5px; vertical-align: top;">
-            <h3>Encoder / decoder of graph elements</H3>
+            <h3>encoder / decoder of graph elements</H3>
             <form id="forma" action="#" onsubmit="return false;">
                 <input type="text" id="coda" placeholder="Enter node #1">
             </form>
@@ -44,16 +44,19 @@ border-radius: 5px;
             <br>
         </td>
         <td style="border: 1px solid black; border-radius: 5px; vertical-align: top;">
-            <h3>Edge list files (DIMACS) to <i>Edge Vector</i></H3>
+            <h3>edge list files (DIMACS) to <i>Edge Vector</i></H3>
             <br>
-            <a>Browse for DIMACS file&nbsp;&nbsp;</a>
+            <a>browse for DIMACS file&nbsp;&nbsp;</a>
             <input style="border-radius: 5px;" type="file" id="inputfile" name="file">
             <br><br>
 
             <table>
                 <tr>
                     <td>
-                        <button style="background-color:lightblue;border-radius: 5px;" onclick="dim2ev()">Convert to Edge Vector&nbsp;&nbsp;</button>
+                        <button style="background-color:lightblue;border-radius: 5px;" onclick="dim2ev()">convert to Edge Vector&nbsp;&nbsp;</button>
+						<br><br>
+						<p>*<small>note that Edge Vector enumeration is in [0, <i>e</i>) and DIMACS enumeration is in [1, <i>n</i>], 
+						<p>where <i>e</i> the number of edges and <i>n</i> the number of nodes of the graph</small
                     </td>
                 <td>
                         <a download="graph.ev" id="thelink" onclick="txt()">Get the file in Edge Vector</a>
