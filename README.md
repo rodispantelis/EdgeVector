@@ -2,7 +2,7 @@
 
 Edge Vector representation is a novel method of representing graphs. It was introduced in [1]. The advantage of this representation is the minimum requirement in memory usage, in comparison to competition. Also encoding a graph in Edge Vector or decoding the graph elements from the representation is efficient with polynomial complexity.
 
-Use Edge Vector [here.](https://rodispantelis.github.io/EdgeVector/)
+Use Edge Vector cCoder-Decoder online [here.](https://rodispantelis.github.io/EdgeVector/index2.html)
 
 In the libraries folder there are coders / decoders implemented in Java and Javascript. Also included a Javascript library for converting files from Dimacs format to Edge Vector which is used as a benchmark.
 
