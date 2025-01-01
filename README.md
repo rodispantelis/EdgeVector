@@ -4,7 +4,7 @@ Edge Vector representation is a novel method of representing graphs. It was intr
 
 Use Edge Vector online Coder-Decoder [here.](https://rodispantelis.github.io/EdgeVector/index2.html)
 
-In the libraries folder there are coders / decoders implemented in Java and Javascript. Also included a Javascript library for converting files from Dimacs format to Edge Vector which is used as a benchmark.
+In the [libraries](https://github.com/rodispantelis/EdgeVector/tree/main/libraries) there are coders / decoders implemented in Java and Javascript. Also included a Javascript library for converting files from Dimacs format to Edge Vector which is used as a benchmark.
 
 In the randographs folder there is a web application for generating randomgraphs.
 
