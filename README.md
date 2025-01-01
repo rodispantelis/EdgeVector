@@ -11,7 +11,7 @@ In the randographs folder there is a web application for generating randomgraphs
 In the DIMACS folder there are graphs from the [Second DIMACS Implementation Challenge](http://archive.dimacs.rutgers.edu/Challenges/), they may be used as benchmark.
 
 ### Edge Vector for undirected graphs
-Let \\(s\\) be a vector that represents undirected graph $G(V, E)$, consisting of $v$ nodes. We further enumerate the elements of $s$ in the range 
+Let $s$ be a vector that represents undirected graph $G(V, E)$, consisting of $v$ nodes. We further enumerate the elements of $s$ in the range 
 $[0, e)$, where $e = v(v-1) / 2$ is the maximum possible number of edges in $G$.
 The symbol in position $q$ of $s$ is $w$, if nodes $a$ and $b$ are adjacent and 0 if they are not adjacent, where  
 
