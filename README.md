@@ -1,6 +1,6 @@
 # Edge Vector representation
 
-Edge Vector representation is a novel method of representing graphs. It was introduced in [1]. The advantage of this representation is the minimum requirement in memory usage, in comparison to competition. Also encoding a graph in Edge Vector or decoding the graph elements from the representation is efficient with polynomial complexity.
+Edge Vector representation is a novel method of representing graphs, see [1] and [2]. The advantage of this representation is the minimum requirement in memory usage, in comparison to competition. Also encoding a graph in Edge Vector or decoding the graph elements from the representation is efficient with polynomial complexity.
 
 Use Edge Vector online Coder-Decoder [here.](https://rodispantelis.github.io/EdgeVector/index2.html)
 
@@ -40,4 +40,7 @@ In the case of graph $$G$$ with weighted nodes, the node weights are stored in a
 ---
 
 [1] P. Rodis and P. Papadimitriou, "Intelligent Network Service Embedding using Genetic Algorithms," *2021 IEEE Symposium on Computers and Communications (ISCC)*, 2021, pp. 1-7, 
-[doi: 10.1109/ISCC53001.2021.9631456](https://doi.org/10.1109/ISCC53001.2021.9631456). [pdf.](https://pantelisrodis.appspot.com/papers/ISCC_2021.pdf)
+[doi: 10.1109/ISCC53001.2021.9631456](https://doi.org/10.1109/ISCC53001.2021.9631456). [pdf.](https://rodispantelis.github.io/papers/papers/ISCC_2021.pdf)
+
+[2] Rodis P. (2025). "AI-assisted resource orchestration for network services and distributed cloud-native applications", *Ph.D. thesis, University of Macedonia*,
+[doi: 10.12681/eadd/60518](http://dx.doi.org/10.12681/eadd/60518). [pdf](https://rodispantelis.github.io/papers/papers/RodisPanteleimonPhD2025.pdf)
