@@ -39,8 +39,10 @@ In the case of graph $$G$$ with weighted nodes, the node weights are stored in a
 
 ---
 
-[1] P. Rodis and P. Papadimitriou, "Intelligent Network Service Embedding using Genetic Algorithms," *2021 IEEE Symposium on Computers and Communications (ISCC)*, 2021, pp. 1-7, 
+[1] Rodis P. (2025). "AI-assisted resource orchestration for network services and distributed cloud-native applications", *Ph.D. thesis, University of Macedonia*,
+[doi: 10.12681/eadd/60518](http://dx.doi.org/10.12681/eadd/60518). [pdf](https://rodispantelis.github.io/papers/papers/RodisPanteleimonPhD2025.pdf)
+
+[2] P. Rodis and P. Papadimitriou, "Intelligent Network Service Embedding using Genetic Algorithms," *2021 IEEE Symposium on Computers and Communications (ISCC)*, 2021, pp. 1-7, 
 [doi: 10.1109/ISCC53001.2021.9631456](https://doi.org/10.1109/ISCC53001.2021.9631456). [pdf.](https://rodispantelis.github.io/papers/papers/ISCC_2021.pdf)
 
-[2] Rodis P. (2025). "AI-assisted resource orchestration for network services and distributed cloud-native applications", *Ph.D. thesis, University of Macedonia*,
-[doi: 10.12681/eadd/60518](http://dx.doi.org/10.12681/eadd/60518). [pdf](https://rodispantelis.github.io/papers/papers/RodisPanteleimonPhD2025.pdf)
+
